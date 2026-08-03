@@ -6,7 +6,8 @@ const home = () => {
   return (
     <View>
       <Text>home</Text>
-      <Link screen={"Details"}> go to Details</Link>
+      <Link
+       screen={"Details"}> go to Details</Link>
     </View>
   )
 }
