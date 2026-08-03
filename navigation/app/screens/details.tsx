@@ -10,6 +10,9 @@ const details = () => {
       <Pressable onPress={() => navigation.push("Details")}>
                 <Text>go to details</Text>
             </Pressable>
+                <Pressable onPress={() => navigation.goBack("home")}>
+                <Text>go back</Text>
+            </Pressable>
     </View>
   )
 }
