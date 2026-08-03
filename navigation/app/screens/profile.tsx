@@ -2,21 +2,19 @@ import { StyleSheet, Text, View , Pressable} from 'react-native'
 import {useNavigation} from "@react-navigation/native"
 import React from 'react'
 
-const details = () => {
+const profile= () => {
     const navigation = useNavigation()
   return (
     <View>
       <Text>details</Text>
-      <Pressable onPress={() => navigation.push("Profile")}>
-                <Text>go to profile</Text>
+      <Pressable onPress={() => navigation.popTo("Details")}>
+                <Text>go to details</Text>
             </Pressable>
-                <Pressable onPress={() => navigation.goBack("Home")}>
-                <Text>go back</Text>
-            </Pressable>
+                
     </View>
   )
 }
 
-export default details
+export default profile
 
 const styles = StyleSheet.create({})
