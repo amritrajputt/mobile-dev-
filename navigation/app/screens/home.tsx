@@ -10,7 +10,7 @@ const home = () => {
             <Text>home</Text>
             {/* <Link
        screen={"Details"}> go to Details</Link> */}
-            <Pressable onPress={() => navigation.navigate("Details")}>
+            <Pressable onPress={() => navigation.push("Details")}>
                 <Text>go to details</Text>
             </Pressable>
         </View>
